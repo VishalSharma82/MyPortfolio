@@ -206,10 +206,12 @@ span {
   background-color: var(--main-color);
   color: black;
 }
+
 .text-animation {
   font-size: 34px;
   font-weight: 600;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
 }
 
 .text-animation span {
@@ -217,54 +219,34 @@ span {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid var(--main-color); /* Blinking cursor */
-  width: 0;
-  animation: typing 2s steps(20) forwards,
-    erasing 2s steps(20) 4s forwards infinite;
+}
+
+/* Words change */
+.text-animation span::before {
+  content: "Frontend Developer";
+  animation: words 12s steps(1) infinite;
+}
+
+/* Typing & Erasing */
+.text-animation span {
+  animation: typing 3s steps(20) infinite;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  0% { width: 0ch; }         /* start blank */
+  40% { width: 20ch; }       /* type full word */
+  60% { width: 20ch; }       /* pause full word */
+  100% { width: 0ch; }       /* erase */
 }
 
-@keyframes erasing {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0;
-  }
-}
-
-/* Dynamic Content Changes */
 @keyframes words {
-  0%,
-  20% {
-    content: "Frontend Developer";
-  }
-  25%,
-  45% {
-    content: "Web Designer";
-  }
-  50%,
-  70% {
-    content: "UI/UX Designer";
-  }
-  75%,
-  95% {
-    content: "Full Stack Developer";
-  }
+  0%, 25%   { content: "Frontend Developer"; }
+  25%, 50%  { content: "Web Designer"; }
+  50%, 75%  { content: "UI/UX Designer"; }
+  75%, 100% { content: "Full Stack Developer"; }
 }
 
-.text-animation span::before {
-  content: "Frontend Developer"; /* Default Text */
-  animation: words 10s infinite;
-}
+
 /* this upper keyframe some error can be possible, because at this point the i'm a vala error and jo logo hai vo vala error fix ho gya hai. */
 .heading {
   font-size: 8rem;

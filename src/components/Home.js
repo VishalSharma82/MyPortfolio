@@ -13,7 +13,7 @@ const Home = () => {
      <section className="home" id="home">
         <div className="home-content">
             <h1>Hi, It's <span>Vishal</span></h1>
-            <h3 className="text-animation">I'm a <span></span></h3>
+            <h3 className="text-animation">I'm a&nbsp;<span> </span></h3>
             <p>Passionate Web Developer skilled in creating responsive, user-friendly websites. Proficient in front-end
                 and back-end technologies, with a strong focus on UI/UX design and optimized web performance.</p>
             <div className="social-icons">
