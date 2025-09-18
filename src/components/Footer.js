@@ -89,7 +89,7 @@ const Footer = () => {
               <i className="bx bx-globe footer-icon"></i>
               <h3>Website</h3>
               <p>
-                <a href="https://www.domain.com">www.Domain.com</a>
+                <a href="https://my-portfolio-mocha-ten-57.vercel.app/">www.vishal.com</a>
               </p>
             </div>
           </div>

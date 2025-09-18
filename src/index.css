@@ -75,7 +75,7 @@ body {
   display: none;
 }
 section {
-  min-height: 60vh;
+  min-height: 4 0vh;
   padding: 10rem 12% 10rem;
 }
 
@@ -566,7 +566,7 @@ span {
   font-size: 2rem;
 }
 .contact {
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
 }
 
 .contact h2 {

@@ -1,20 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React from 'react';
-import Header from './components/Header';
-import Home from './components/Home';
-import About from './components/About';
-import Footer from './components/Footer';
-import Projects from './components/Projects';
-import Services from './components/Services';
-import Experience from './components/Experience';
-import Education from './components/Education';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Projects from "./components/Projects";
+// import Services from './components/Services';
+import Experience from "./components/Experience";
+import Education from "./components/Education";
 import ThemeColorPicker from "./components/ThemeColorPicker";
 import ContactForm from "./components/ContactForm";
 import ReachCure from "./components/ReachCure";
 import CodSoft from "./components/CodSoft";
-
-import './index.css';
-import './App.css';
+import CertificateViewer from "./components/CertificateViewer";
+import "./index.css";
+import "./App.css";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
                 <Education />
                 <Experience />
                 <Projects />
-                <Services />
+                {/* <Services /> */}
                 <ThemeColorPicker />
                 <ContactForm />
               </>
@@ -39,6 +39,14 @@ function App() {
           />
           <Route path="/codsoft" element={<CodSoft />} />
           <Route path="/ReachCure" element={<ReachCure />} />
+          <Route
+            path="/certificate/codsoft"
+            element={<CertificateViewer img="/assest/images/codsoft.png" />}
+          />
+          <Route
+            path="/certificate/reachcure"
+            element={<CertificateViewer img="/assest/images/ReachCure.png" />}
+          />
         </Routes>
       </main>
       <Footer />
