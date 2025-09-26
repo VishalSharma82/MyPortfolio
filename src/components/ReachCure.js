@@ -12,7 +12,7 @@ const ReachCureInternship = () => {
           <p className="timeline-withname">January 2025 - February 2025</p>
           <h3 className="timeline-role">Web Development Intern</h3>
           <p>
-            I completed a <strong>2-month internship</strong> at{" "}
+            I completed a <strong>3-month internship</strong> at{" "}
             <strong>ReachCure</strong> where I worked on live client-based
             projects in a collaborative environment. Although I contributed for
             two months, the certificate was issued for the first month only, as
@@ -31,7 +31,7 @@ const ReachCureInternship = () => {
             integration.
           </p>
           <a
-            href="https://avenue-corp.example.com"
+            href="https://avenue-corporation.vercel.app/alactic.wixsite.com/my-site-4-2.html"
             className="project-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -50,7 +50,7 @@ const ReachCureInternship = () => {
             worked on the UI design, routing system, and animation.
           </p>
           <a
-            href="https://tinttwist.example.com"
+            href="https://tint-twist.vercel.app/"
             className="project-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -69,7 +69,7 @@ const ReachCureInternship = () => {
             surgeon's website using HTML, CSS, and responsive design principles.
           </p>
           <a
-            href="https://plasticsurgeon.example.com"
+            href="https://plastic-surgeon-pi.vercel.app/"
             className="project-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -88,11 +88,14 @@ const ReachCureInternship = () => {
 
         {/* Certificate */}
         <div className="timeline-item">
-          <p className="timeline-withname">Internship Certificate (1 Month)</p>
-<a href="/certificate/reachcure" className="certificate-button" target="_blank">
-  View Certificate
-</a>
-
+          <p className="timeline-withname">Internship Certificate </p>
+          <a
+            href="../certificate/reachcure"
+            className="certificate-button"
+            target="_blank"
+          >
+            View Certificate
+          </a>
         </div>
       </div>
     </section>

@@ -17,7 +17,7 @@ const Home = () => {
             <p>Passionate Web Developer skilled in creating responsive, user-friendly websites. Proficient in front-end
                 and back-end technologies, with a strong focus on UI/UX design and optimized web performance.</p>
             <div className="social-icons">
-  <a href="https://www.linkedin.com/in/vishal-sharma-3rd-b46a14252" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/vishal-sharma-b46a14252" target="_blank" rel="noopener noreferrer">
     <FaLinkedin size={28} color="#0077b5" />
   </a>
 

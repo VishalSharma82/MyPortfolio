@@ -82,7 +82,7 @@ const CodSoftInternship = () => {
         {/* Certificate */}
         <div className="timeline-item">
           <p className="timeline-withname ">Internship Certificate </p>
-          <a href="/certificate/codsoft" className="certificate-button" target="_blank">
+          <a href="../certificate/codsoft" className="certificate-button" target="_blank">
             View Certificate
           </a>
         </div>
