@@ -33,12 +33,18 @@ const Projects = () => {
                 <a href="https://musicplayer-07bb.onrender.com/"  className="btn">View Project</a>
             </div>
 
-            {/* <div className="project-box">
-                <img src="./assest/images/p3.png" alt="Restorant"/>
-                <h3>Restorant Website</h3>
-                <p>A website for a fast food restaurant with an attractive menu, online ordering system, and a responsive design to engage customers and streamline their ordering process.</p>
-                <a href="https://restorant-eta.vercel.app/" className="btn">View Project</a>
-            </div> */}
+            <div className="project-box">
+                <img src="./assest/images/timetable.png" alt="TimeTable Generator"/>
+                <h3>Time Table Generator</h3>
+                <p>Fully functional website help to manages, schedules, and create the time table in just a second wihout conflict.</p>
+                <a href="https://college-timetable-system.onrender.com/" className="btn">View Project</a>
+            </div>
+                        <div className="project-box">
+                <img src="./assest/images/p2p.png" alt="FreeWebShareMe"/>
+                <h3>Time Table Generator</h3>
+                <p>It helps to share the data like images,videos and other document without need any connections like gmail,whatsapp. It need just only internt and a 12 digit code.</p>
+                <a href="https://freewebshareme.onrender.com/" className="btn">View Project</a>
+            </div>
         </div>
     </section>
   );

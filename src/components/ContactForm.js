@@ -13,10 +13,15 @@ const ContactForm = () => {
       message: e.target.message.value,
     };
 
-    emailjs.init("YOUR_USER_ID"); // replace this with your EmailJS User ID
+    // Initialize EmailJS using environment variable
+    emailjs.init(process.env.REACT_APP_EMAILJS_USER_ID);
 
     emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams)
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        templateParams
+      )
       .then(() => {
         alert("Message sent successfully!");
         e.target.reset();

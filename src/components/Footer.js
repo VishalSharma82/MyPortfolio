@@ -104,27 +104,6 @@ const Footer = () => {
         title="Toggle menu"
       ></div>
 
-      {/* Add navbar container with ref */}
-      <nav ref={navbarRef} className="footer-navbar">
-        <ul className="list">
-          <li>
-            <a href="faq">FAQ</a>
-          </li>
-          <li>
-            <a href="services">Services</a>
-          </li>
-          <li>
-            <a href="about">About Me</a>
-          </li>
-          <li>
-            <a href="contact">Contact</a>
-          </li>
-          <li>
-            <a href="testimonials">Testimonials</a>
-          </li>
-        </ul>
-      </nav>
-
       {/* Social Links */}
 <div className="social-icons">
   <a href="https://www.linkedin.com/in/vishal-sharma-3rd-b46a14252" target="_blank" rel="noopener noreferrer">
