@@ -1,91 +1,76 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   FaLinkedin,
-  FaFacebook,
+  FaGithub,
   FaInstagram,
   FaTwitter,
   FaYoutube,
   FaWhatsapp,
 } from "react-icons/fa";
 
+const socialLinks = [
+  { href: "https://www.linkedin.com/in/vishal-sharma-3rd-b46a14252", icon: <FaLinkedin size={22} />, label: "LinkedIn" },
+  { href: "https://github.com/VishalSharma82", icon: <FaGithub size={22} />, label: "GitHub" },
+  { href: "https://www.instagram.com/vishal42619", icon: <FaInstagram size={22} />, label: "Instagram" },
+  { href: "https://www.twitter.com", icon: <FaTwitter size={22} />, label: "Twitter" },
+  { href: "https://www.youtube.com", icon: <FaYoutube size={22} />, label: "YouTube" },
+  { href: "https://wa.me/919166682131", icon: <FaWhatsapp size={22} />, label: "WhatsApp" },
+];
+
 const Home = () => {
   return (
     <section className="home" id="home">
       <div className="home-content">
+        <div className="home-greeting">👋 Hello, World!</div>
         <h1>
-          Hi, It's <span>Vishal</span>
+          I'm <span>Vishal</span> Sharma
         </h1>
         <h3 className="text-animation">
           I'm a&nbsp;<span> </span>
         </h3>
         <p>
-          Passionate Web Developer skilled in creating responsive, user-friendly
-          websites. Proficient in front-end and back-end technologies, with a
-          strong focus on UI/UX design and optimized web performance.
+          Full Stack MERN Developer with hands-on experience building scalable and 
+          secure web applications using React.js, Node.js, Express.js, and MongoDB. 
+          Skilled in REST APIs, JWT authentication, and optimized performance.
         </p>
+
         <div className="social-icons">
-          <a
-            href="https://www.linkedin.com/in/vishal-sharma-b46a14252"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin size={28} color="#0077b5" />
-          </a>
-
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaFacebook size={28} color="#4267B2" />
-          </a>
-
-          <a
-            href="https://www.instagram.com/vishal42619"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram size={28} color="#E1306C" />
-          </a>
-
-          <a
-            href="https://www.twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaTwitter size={28} color="#1DA1F2" />
-          </a>
-
-          <a
-            href="https://www.youtube.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaYoutube size={28} color="#FF0000" />
-          </a>
-
-          <a
-            href="https://wa.me/919166682131"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaWhatsapp size={28} color="#25D366" />
-          </a>
+          {socialLinks.map(({ href, icon, label }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              title={label}
+            >
+              {icon}
+            </a>
+          ))}
         </div>
 
         <div className="btn-group">
           <a
             href="https://wa.me/919166682131?text=Hi%20Vishal,%20I%20want%20to%20hire%20you"
-            className="btn hire-btn"
+            className="btn"
             target="_blank"
             rel="noopener noreferrer"
           >
             Hire Me
           </a>
+          <a
+            href="/assest/Vishal_Resume.pdf"
+            className="btn btn-outline"
+            download
+          >
+            Download CV
+          </a>
         </div>
       </div>
-      <div className="home-img">
-        <img src="./assest/images/profile.png" alt="" />
+
+      <div className="home-img animate-reveal">
+        <div className="home-img-glow" />
+        <img src="./assest/images/profile.png" alt="Vishal Sharma" />
       </div>
     </section>
   );

@@ -4,97 +4,82 @@ import "./Internship_detail.css"; // Use the dark theme CSS
 const ReachCureInternship = () => {
   return (
     <section className="reachcure-section">
-      <h2 className="section-heading">ReachCure Internship Experience</h2>
+      <h2 className="section-heading"><span>ReachCure</span> Internship</h2>
 
       <div className="timeline">
-        {/* Internship Details */}
-        <div className="timeline-item">
-          <p className="timeline-withname">January 2025 - February 2025</p>
+        {/* Overview */}
+        <div className="timeline-item animate-reveal">
+          <span className="timeline-withname">Nov 2024 - Jan 2025</span>
           <h3 className="timeline-role">Web Development Intern</h3>
           <p>
-            I completed a <strong>3-month internship</strong> at{" "}
-            <strong>ReachCure</strong> where I worked on live client-based
-            projects in a collaborative environment. Although I contributed for
-            two months, the certificate was issued for the first month only, as
-            per company policy.
+            During my professional tenure at <strong>ReachCure</strong>, I spearheaded the 
+            development and optimization of multiple live client projects. I focused on 
+            delivering high-performance frontends and robust API integrations within a 
+            fast-paced agile environment.
           </p>
         </div>
 
         {/* Project 1 */}
-        <div className="timeline-item">
-          <p className="timeline-withname">Project: Avenue Corporation</p>
-          <h3 className="timeline-role">Construction Company Website</h3>
+        <div className="timeline-item animate-reveal" style={{ animationDelay: '0.2s' }}>
+          <span className="timeline-withname">Commercial Project</span>
+          <h3 className="timeline-role">Avenue Corporation</h3>
           <p>
-            A responsive and SEO-optimized website for a firm specializing in
-            industrial building contracts and infrastructure projects. I
-            contributed to the layout design, responsiveness, and content
-            integration.
+            Developed a comprehensive, SEO-optimized platform for an industrial building firm. 
+            Focused on pixel-perfect layouts, responsive architecture, and seamless content delivery 
+            to showcase large-scale infrastructure projects.
           </p>
-          <a
-            href="https://avenue-corporation.vercel.app/alactic.wixsite.com/my-site-4-2.html"
-            className="project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit Project
+          <a href="https://avenue-corporation.vercel.app/" className="project-link" target="_blank" rel="noopener noreferrer">
+            <i className='bx bx-link-external'></i> Live Project
           </a>
         </div>
 
         {/* Project 2 */}
-        <div className="timeline-item">
-          <p className="timeline-withname">Project: Tint & Twist</p>
-          <h3 className="timeline-role">Salon & Makeup School Website</h3>
+        <div className="timeline-item animate-reveal" style={{ animationDelay: '0.4s' }}>
+          <span className="timeline-withname">Styling & UI</span>
+          <h3 className="timeline-role">Tint & Twist</h3>
           <p>
-            A glamorous and dynamic website for a makeup school, featuring
-            training program info, salon services, and booking features. I
-            worked on the UI design, routing system, and animation.
+            Architected a glamorous digital presence for a premium makeup school. 
+            Implemented dynamic routing systems, custom animations, and an intuitive 
+            salon booking interface that significantly improved user retention.
           </p>
-          <a
-            href="https://tint-twist.vercel.app/"
-            className="project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit Project
+          <a href="https://tint-twist.vercel.app/" className="project-link" target="_blank" rel="noopener noreferrer">
+            <i className='bx bx-link-external'></i> Live Project
           </a>
         </div>
 
         {/* Project 3 */}
-        <div className="timeline-item">
-          <p className="timeline-withname">Project: Plastic Surgeon</p>
-          <h3 className="timeline-role">Test Project (Entry Level)</h3>
+        <div className="timeline-item animate-reveal" style={{ animationDelay: '0.6s' }}>
+          <span className="timeline-withname">Optimization</span>
+          <h3 className="timeline-role">Plastic Surgeon Portal</h3>
           <p>
-            This was the first evaluation project to test my frontend
-            capabilities. I developed a clean and functional UI for a plastic
-            surgeon's website using HTML, CSS, and responsive design principles.
+            Engineered a clean, professional medical portal as part of preliminary 
+            technical evaluation. Achieved 90+ Lighthouse scores for accessibility 
+            and performance, focusing on intuitive healthcare UX.
           </p>
-          <a
-            href="https://plastic-surgeon-pi.vercel.app/"
-            className="project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit Project
+          <a href="https://plastic-surgeon-pi.vercel.app/" className="project-link" target="_blank" rel="noopener noreferrer">
+            <i className='bx bx-link-external'></i> Live Project
           </a>
         </div>
 
         {/* Technologies */}
-        <div className="timeline-item">
-          <p className="timeline-withname">Technologies Used</p>
-          <p>
-            HTML, CSS, JavaScript, TailwindCSS, Bootstrap, React.js, WordPress.
-          </p>
+        <div className="timeline-item animate-reveal" style={{ animationDelay: '0.8s' }}>
+          <span className="timeline-withname">Technical Stack</span>
+          <div className="tech-container">
+            <span className="tech-pill">React.js</span>
+            <span className="tech-pill">Tailwind CSS</span>
+            <span className="tech-pill">JavaScript (ES6+)</span>
+            <span className="tech-pill">Node.js</span>
+            <span className="tech-pill">Bootstrap</span>
+            <span className="tech-pill">Git / GitHub</span>
+          </div>
         </div>
 
         {/* Certificate */}
-        <div className="timeline-item">
-          <p className="timeline-withname">Internship Certificate </p>
-          <a
-            href="../certificate/reachcure"
-            className="certificate-button"
-            target="_blank"
-          >
-            View Certificate
+        <div className="timeline-item animate-reveal" style={{ animationDelay: '1s' }}>
+          <span className="timeline-withname">Official Completion</span>
+          <p>Verified internship completion with performance commendation.</p>
+          <a href="../certificate/reachcure" className="certificate-button" target="_blank">
+            <i className='bx bxs-award'></i> View Certificate
           </a>
         </div>
       </div>

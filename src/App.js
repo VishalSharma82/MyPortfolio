@@ -2,10 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import About from "./components/About";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
-// import Services from './components/Services';
+import Services from './components/Services';
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import ThemeColorPicker from "./components/ThemeColorPicker";
@@ -27,11 +26,10 @@ function App() {
             element={
               <>
                 <Home />
-                <About />
                 <Education />
                 <Experience />
+                <Services />
                 <Projects />
-                {/* <Services /> */}
                 <ThemeColorPicker />
                 <ContactForm />
               </>

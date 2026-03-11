@@ -4,86 +4,67 @@ import "./Internship_detail.css"; // Aap apni CSS file yahan import kar sakte ha
 const CodSoftInternship = () => {
   return (
     <section className="codsoft-section">
-      <h2 className="section-heading">CodSoft Internship Experience</h2>
+      <h2 className="section-heading"><span>CodSoft</span> Internship</h2>
 
       <div className="timeline">
         {/* Internship Overview */}
-        <div className="timeline-item">
-          <p className="timeline-withname">January 2025</p>
+        <div className="timeline-item animate-reveal">
+          <span className="timeline-withname">January 2025</span>
           <h3 className="timeline-role">Web Development Intern</h3>
           <p>
-            Successfully completed a <strong>1-month internship</strong> at{" "}
-            <strong>CodSoft</strong>, working remotely on real-world web
-            development tasks organized in progressive levels. This experience
-            enhanced my front-end skills, UI/UX understanding, and deadline
-            management.
+            Successfully completed an intensive 1-month remote internship at 
+            <strong>CodSoft</strong>. I tackled progressive web development 
+            challenges, refining my frontend architecture skills and mastering 
+            modern responsive design workflows.
           </p>
         </div>
 
         {/* Level 1 Tasks */}
-        <div className="timeline-item">
-          <p className="timeline-withname">Level 1 Tasks</p>
-          <ul className="task-list">
-            <li>
-              <strong>Calculator:</strong> Built a simple, responsive calculator
-              using HTML, CSS, and JavaScript with basic validation.
-            </li>
-            <li>
-              <strong>Landing Page:</strong> Designed a modern landing page for
-              a fictional food brand using HTML, Tailwind CSS, and responsive
-              layout techniques.
-            </li>
-            <li>
-              <strong>Portfolio Website:</strong> Developed my personal
-              portfolio showcasing skills, projects, and certifications with
-              smooth animations and responsive layout.
-            </li>
+        <div className="timeline-item animate-reveal" style={{ animationDelay: '0.2s' }}>
+          <span className="timeline-withname">Level 1: Fundamentals</span>
+          <ul className="task-list-modern">
+            <li><strong>Calculator:</strong> Designed a pixel-perfect, logic-driven calculator with vanilla JS.</li>
+            <li><strong>Landing Page:</strong> Built a high-conversion food brand site using Tailwind CSS.</li>
+            <li><strong>Portfolio:</strong> Developed the initial version of my professional portfolio.</li>
           </ul>
         </div>
 
         {/* Level 2 Tasks */}
-        <div className="timeline-item">
-          <p className="timeline-withname">Level 2 Tasks</p>
-          <ul className="task-list">
-            <li>
-              <strong>Job Board:</strong> Created a job board interface with job
-              listings, filters, and responsive job detail modals.
-            </li>
-            <li>
-              <strong>Online Quiz:</strong> Developed a quiz application with
-              timer, score calculation, and API-based question loading logic.
-            </li>
+        <div className="timeline-item animate-reveal" style={{ animationDelay: '0.4s' }}>
+          <span className="timeline-withname">Level 2: Dynamic UI</span>
+          <ul className="task-list-modern">
+            <li><strong>Job Board:</strong> Created a complex UI with dynamic filtering and response modals.</li>
+            <li><strong>Online Quiz:</strong> Built an interactive quiz engine with real-time scoring.</li>
           </ul>
         </div>
 
         {/* Level 3 Tasks */}
-        <div className="timeline-item">
-          <p className="timeline-withname">Level 3 Tasks</p>
-          <ul className="task-list">
-            <li>
-              <strong>E-commerce Website:</strong> Built a functional e-commerce
-              website with product pages, cart features, responsive UI, and
-              attractive layout using Tailwind and Bootstrap.
-            </li>
-            <li>
-              <strong>Project Management Tool:</strong> Created a task tracker
-              dashboard with project cards, user assignments, and dynamic status
-              updates to simulate real-time management.
-            </li>
+        <div className="timeline-item animate-reveal" style={{ animationDelay: '0.6s' }}>
+          <span className="timeline-withname">Level 3: Full Stack & UX</span>
+          <ul className="task-list-modern">
+            <li><strong>E-commerce:</strong> Engineered a robust product browsing and cart system.</li>
+            <li><strong>Project Tool:</strong> Developed a task management dashboard with status tracking.</li>
           </ul>
         </div>
 
         {/* Technologies & Tools */}
-        <div className="timeline-item">
-          <p className="timeline-withname">Technologies & Tools Used</p>
-          <p>HTML, CSS, JavaScript, Bootstrap, Tailwind CSS</p>
+        <div className="timeline-item animate-reveal" style={{ animationDelay: '0.8s' }}>
+          <span className="timeline-withname">Technical Stack</span>
+          <div className="tech-container">
+            <span className="tech-pill">HTML5</span>
+            <span className="tech-pill">CSS3 / Tailwind</span>
+            <span className="tech-pill">JavaScript (ES6)</span>
+            <span className="tech-pill">Bootstrap</span>
+            <span className="tech-pill">Responsive Design</span>
+          </div>
         </div>
 
         {/* Certificate */}
-        <div className="timeline-item">
-          <p className="timeline-withname ">Internship Certificate </p>
+        <div className="timeline-item animate-reveal" style={{ animationDelay: '1s' }}>
+          <span className="timeline-withname">Official Completion</span>
+          <p>Verified internship completion for all project levels.</p>
           <a href="../certificate/codsoft" className="certificate-button" target="_blank">
-            View Certificate
+            <i className='bx bxs-award'></i> View Certificate
           </a>
         </div>
       </div>
