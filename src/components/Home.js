@@ -59,7 +59,7 @@ const Home = () => {
             Hire Me
           </a>
           <a
-            href="/assest/Vishal_Resume.pdf"
+            href="/assest/Vishal Sharma Resume.pdf"
             className="btn btn-outline"
             download
           >
