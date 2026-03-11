@@ -7,7 +7,6 @@ import Projects from "./components/Projects";
 import Services from './components/Services';
 import Experience from "./components/Experience";
 import Education from "./components/Education";
-import ThemeColorPicker from "./components/ThemeColorPicker";
 import ContactForm from "./components/ContactForm";
 import ReachCure from "./components/ReachCure";
 import CodSoft from "./components/CodSoft";
@@ -30,7 +29,6 @@ function App() {
                 <Experience />
                 <Services />
                 <Projects />
-                <ThemeColorPicker />
                 <ContactForm />
               </>
             }
